@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/d62be5e491.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+
+    <title>MyTriAdvisor</title>
+  </head>
+  <body id="body">
+    <header>
+      <section class="fixed">
+        
+      <div>
+        <img class="logo" src="./assets/img/logoTripAdvisor.svg" alt="logo" />
+      </div>
+      <nav class="menu">
+        <div class="hoverMenu">
+          <i class="fa-solid fa-pen"></i>
+          <p>Avis</p>
+        </div>
+        <div class="hoverMenu">
+          <i class="fa-regular fa-heart"></i>
+          <p>Voyages</p>
+        </div>
+        <div class="hoverMenu">
+          <i class="fa-solid fa-bell"></i>
+          <p>Alertes</p>
+        </div>
+        <div>
+          <button id="button-head"  class="buttonHeader">Connectez-vous</button>
+        </div>
+      </nav></section>
+
+      <section class="small-header">
+        <div><i class="fa-solid fa-bars"></i></div><div><img class="logo" src="./assets/img/logoTripAdvisor.svg" alt="logo" /></div><div><i class="fa-solid fa-magnifying-glass"></i></div>
+      </section>
+
+    </header>
+
+<div id="form-submit" class="hidden">
+<div class="modal-container">  
+</div>
+<div class="wrap">
+<div class="modal">
+  <i id="x" class="fa-solid fa-xmark"></i>
+  <h2>Formulaire de contact</h2>
+  <form id="form">
+    <input class="text" type="text" placeholder="Prénom" id="firstname">
+    <input class="text" type="text" placeholder="Nom" id="lastname">
+    <input class="text" type="email" name=""  placeholder="E-mail" id="email">
+    <textarea name="" id="textaera" cols="30" rows="7" placeholder="Ecrivez ici votre message"></textarea>
+    <button id="modal" type="submit">Envoyer le formulaire</button>
+  </form></div>
+</div></div>
+
+
+    <main>
+      <h1><span>Explorez</span> Paris</h1>
+
+      <nav class="nav-main">
+        <div>
+          <p>Hôtels</p>
+          <i class="fa-solid fa-bed"></i>
+        </div>
+        <div>
+          <p>
+            Locations de <br />
+            vacances
+          </p>
+          <i class="fa-solid fa-key"></i>
+        </div>
+        <div>
+          <p>Activités</p>
+          <i class="fa-solid fa-ticket"></i>
+        </div>
+        <div>
+          <p>Restaurants</p>
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+        <div>
+          <p>
+            Forums de
+            voyage
+          </p>
+          <i class="fa-solid fa-message"></i>
+        </div>
+        <div>
+          <p>Plus</p>
+          <p class="more">...</p>
+        </div>
+      </nav>
+
+      <nav class="media-max-1084">
+        <div class="menu-up">
+        <div>
+          <p>Hôtels</p>
+          <i class="fa-solid fa-bed"></i>
+        </div>
+        <div>
+          <p>
+            Locations de 
+            vacances
+          </p>
+          <i class="fa-solid fa-key"></i>
+        </div>
+        <div>
+          <p>Activités</p>
+          <i class="fa-solid fa-ticket"></i>
+        </div>
+        <div>
+          <p>Restaurants</p>
+          <i class="fa-solid fa-utensils"></i>
+        </div></div>
+        <div class="menu-down">
+        <div>
+          <p>
+            Forums de
+            voyage
+          </p>
+          <i class="fa-solid fa-message"></i>
+        </div>
+        <div>
+          <p>vols</p>
+          <i class="fa-solid fa-plane-departure"></i>
+        </div>
+        <div><p>Croisières</p>
+          <i class="fa-solid fa-ship"></i>
+        </div>
+        <div>
+          <p>Plus</p>
+          <p class="more">...</p>
+        </div></div>
+
+      </nav>
+      <section class="media small">
+        <div class="main-image">
+          <div>
+            <img
+              src="./assets/img/caption.jpeg"
+              alt="immeuble bord de seine"
+              class="big-img"
+            />
+          </div>
+          <div class="two-img">
+            <img src="./assets/img/caption1.jpeg" alt="couple en scoot" /><img
+              src="./assets/img/caption2.jpeg"
+              alt="tour Eiffel"
+            />
+          </div>
+        </div>
+        <nav class="navUnderImg">
+          <div class="ancher">
+            <a href="https://www.tripadvisor.fr/Tourism-g4-Europe-Vacations.html">Europe &nbsp</a>
+            <p>></p>
+            <a href="https://www.tripadvisor.fr/Tourism-g187070-France-Vacations.html">&nbsp France</a>
+            <p>&nbsp > &nbsp</p>
+            <a href="https://www.tripadvisor.fr/Tourism-g187144-Ile_de_France-Vacations.html">île-de-France &nbsp</a>
+            <p>></p>
+            <a href="https://www.tripadvisor.fr/Tourism-g187147-Paris_Ile_de_France-Vacations.html">&nbsp Paris &nbsp</a>
+            <p class="arrow">&#9662;</p>
+          </div>
+          <p>Visiter : Paris</p>
+        </nav>
+      </section>
+      <section class="city">
+        <div class="presentation">
+          <h2>La Ville Lumière éblouit en tous points</h2>
+          <p>
+            Aucun autre endroit au monde ne fait autant rêver que Paris. La
+            ville séduit par son art, son architecture, sa culture et sa
+            cuisine, mais il y a aussi des merveilles plus discrètes qui
+            n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+            les pâtisseries au coin de la rue et les petits bistrots douillets
+            qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+            vous approprier Paris.
+          </p>
+        </div>
+        <div class="city-map">
+          <div class="box">
+          <div class="text-and-button">
+           <h3> Paris : commencez à </br> organiser !</h3>
+          <p>
+              Créer un voyage pour enregistrer et organiser toutes </br> vos idées et
+              les visualiser sur une carte
+            </p>
+            <button>Créer un voyage</button></div>
+          </div>
+          <img src="./assets/img/maps_cnuhsr.png" alt="map" />
+        </div>
+      </section>
+
+<h2>Paris : les immanquables</h2>
+
+      <section class="three-section">      
+        <div class="text">
+          <h4>Se divertir</h4>
+          <p>Des lieux à voir, des rues à explorer et des expériences emblématiques à Paris.</p>
+       <a href="https://www.tripadvisor.fr/Attractions-g187147-Activities-Paris_Ile_de_France.html">Tout afficher</a>
+        </div>
+         <div class="carrousel">           
+          <div  class="marginRightImg "><i class="heart fa-brands fa-gratipay"></i><img src="./assets/img/eiffeltoren.jpg" alt="tour Eiffel">
+            <h5>Eiffel Tower</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle-half-stroke"> </i><span>140879</span><p>Tours et plateformes d'observation, Monuments & Points d'intérêt</p></div>
+          
+          <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/cour-napoleon-et-pyramide.jpg" alt="">
+          <h5>Musée du Louvre</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle-half-stroke"> </i><span>101381</span><p>Bâtiments architecturaux, Musées d'art
+</p></div>
+           <div class="marginRightImg "><i class="heart fa-brands fa-gratipay"></i><img src="./assets/img/arc-de-triomphe-at-night.jpg" alt=""><h5>Arc de Triomphe</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle-half-stroke"> </i><span>45392</span><p>Bâtiments architecturaux, Sites historiques
+          </p></div>
+           <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/jardin-des-tuileries.jpeg" alt=""><h5></h5><p></p></div>
+           <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/vue-de-la-cour-d-honneur.jpeg" alt=""><h5></h5><p></p></div>
+           <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/the-amazingly-detailed.jpeg" alt=""><h5></h5><p></p></div>
+           <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/the-bookstore.jpeg" alt=""><h5></h5><p></p></div>
+           <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/20180601-122841-largejpg.jpeg" alt=""><h5></h5><p></p></div>
+           <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/marche-vernaison-maison.jpeg" alt=""><h5></h5><p></p></div>
+           <div class="marginRightImg marg"><i class="fa-brands fa-gratipay"></i><img src="./assets/img/basilica-del-sagrado.jpeg" alt=""><h5></h5><p></p></div>
+         </div>    
+      </section>
+
+
+   <section class="three-section">    
+  <div class="text">
+    <h4>Se reposer</h4>
+    <p>Un mélange de charme, de symboles et de modernité.</p>
+    <a href="https://www.tripadvisor.fr/Hotels-g187147-Paris_Ile_de_France-Hotels.html">Tout afficher</a>
+  </div>
+  <div class="carrousel">
+    <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/le-bristol-paris-colonnade.jpg" alt="bristol"><img src="./assets/img/best.png" alt=""><h5>Le Bistrol Paris</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>2153</span></div>
+    <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/detail.jpg" alt=""><img src="./assets/img/best.png" alt=""><h5>La Réserve Paris - Hotel and Spa</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>528</span></div>
+    <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/exterior.jpg" alt=""><img src="./assets/img/best.png" alt=""><h5>Four seasons Hotel George V</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>3146</span></div>
+    <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-de-crillon.jpeg" alt=""><img src="./assets/img/best.png" alt=""><h5>La Réserve Paris - Hotel and Spa</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>528</span></div>
+    <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/le-meurice-chambre-superieure.jpeg" alt=""><img src="./assets/img/best.png" alt=""><h5>La Réserve Paris - Hotel and Spa</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>528</span></div>
+    <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-des-grands-boulevards.jpeg" alt=""><img src="./assets/img/best.png" alt=""><h5>La Réserve Paris - Hotel and Spa</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>528</span></div>
+    <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/the-hoxton-paris.jpeg" alt=""><img src="./assets/img/best.png" alt=""><h5>La Réserve Paris - Hotel and Spa</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>528</span></div>
+    <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-henriette.jpeg" alt=""><img src="./assets/img/best.png" alt=""><h5>La Réserve Paris - Hotel and Spa</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>528</span></div>
+    <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hidden-hotel-by-elegancia.jpeg" alt=""><img src="./assets/img/best.png" alt=""><h5>La Réserve Paris - Hotel and Spa</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>528</span></div>
+    <div class="marginRightImg marg"><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-signature-st-germain.jpeg" alt=""><img src="./assets/img/best.png" alt=""><h5>La Réserve Paris - Hotel and Spa</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>528</span></div>
+  </div>    
+ </section>
+ <section class="three-section">
+ 
+<div class="text">
+  <h4>Se restaurer
+  </h4>
+  <p>Bistrots et bars typiques, et plus encore à Paris.</p>
+  <a href="https://www.tripadvisor.fr/Restaurants-g187147-Paris_Ile_de_France.html">Tout afficher</a>
+</div>
+<div class="carrousel"> 
+   <div class="marginRightImg  "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/verjus.jpg" alt=""><h5>Verjus</h5><p></p><p>€€€€ • Française, Européenne, Moderne</p></div>
+    <div class="marginRightImg  "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/plat.jpg" alt=""><h5>114 Faubourg</h5><p></p><p>€€€€ • Française, Européenne, Végétariens bienvenus</p></div>
+  <div class="marginRightImg  "><i class= "fa-brands fa-gratipay"></i><img src="./assets/img/frenchie.jpg" alt=""><h5>Frenchie</h5><p></p><p>€€€€ • Française, Végétariens bienvenus, Plats sans gluten</p></div>
+  <div class="marginRightImg  "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/notre-salle-de-restaurant.jpeg" alt=""><h5></h5><p></p></div>
+    <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/restaurant-aspic-quentin.jpeg" alt=""><h5></h5><p></p></div>
+  <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/terrasse-de-gigi.jpeg" alt=""><h5></h5><p></p></div>
+  <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/20170629-134456-largejpg.jpeg" alt=""><h5></h5><p></p></div>
+  <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/img-20180825-wa0088-largejpg.jpeg" alt=""><h5></h5><p></p></div>
+  <div class="marginRightImg "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/pedzouille.jpeg" alt=""><h5></h5><p></p></div>
+  <div class="marginRightImg marg"><i class="fa-brands fa-gratipay"></i><img src="./assets/img/photo4jpg.jpeg" alt=""></div><h5></h5><p></p></div>    
+</section>
+
+<section class="without-carrousel">
+
+<div>
+  <div class="very-display-small-log"><img src="./assets/img/Tripadvisor_lockup_horizontal_tertiary_on_dark.svg" alt=""></div>
+<div class="text-escape"><h4>Évadez-vous</h4><p>Visites, attractions et activités Best of the Best à ne pas manquer.</p><button>Voir la liste</button></div>
+</div>
+<div class="position"><img class="abosluteImg" src="/assets/img/tc-badge.png" alt="travelers choise"><img class="escape" src="./assets/img/evadez-vous.jpeg" alt="evadez-vous"></div>
+</section>
+<section>
+  <div class="forum"><h4>En tendance dans les forums</h4><a href="https://www.tripadvisor.fr/ShowForum-g187147-i14-Paris_Ile_de_France.html">Tout afficher</a></div>
+  <div class="three-div">
+     <div ><p class="text-title">Mode de transport Paris</p><div class="avatar first"><img src="./assets/img/avatar1.jpeg" alt=""><p>Par <span>Coraline B </span>&#9679 7 réponses</p></div></div>
+     <div ><p class="text-title">brioche doree Paris st lazare</p><div class="avatar"><img src="./assets/img/avatar1.jpeg" alt=""><p>Par <span>Coraline B </span>&#9679 7 réponses</p></div></div>
+     <div ><p class="text-title">Guides touristiques digitaux sur application mobile</p><div class="avatar last"><img src="./assets/img/avatar1.jpeg" alt=""><p>Par <span>Coraline B </span>&#9679 7 réponses</p></div></div>
+</div>
+</section>
+
+<section>  
+  <h2>Louez un logement pour votre prochaine escapade</h2>
+  <div class="carrousel-end">  
+      <h4>Locations populaires à Paris</h4><a href="https://www.tripadvisor.fr/ShowForum-g187147-i14-Paris_Ile_de_France.html">Tout afficher</a>
+    </div>
+    <div class="carrousel-all">
+      <div class="endcontainer-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/1a.jpeg" alt="bristol"><h5>Le Bistrol Paris</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>2153</span></div>
+      <div class="endcontainer-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/1.jpeg" alt=""><h5>La Réserve Paris - Hotel and Spa</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>528</span></div>
+      <div class="endcontainer-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/2.jpeg" alt=""><h5>Four seasons Hotel George V</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>3146</span></div>
+      <div class="endcontainer-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/3.jpeg" alt=""></div>
+      <div class="endcontainer-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/le-meurice-chambre-superieure.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="endcontainer-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-des-grands-boulevards.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="endcontainer-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/the-hoxton-paris.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="endcontainer-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-henriette.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="endcontainer-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hidden-hotel-by-elegancia.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="endcontainer-img marg"><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-signature-st-germain.jpeg" alt=""><h5></h5><p></p></div>
+    </div>    
+  </div>
+</section>
+<section>
+<h2>Paris est géniale pour</h2>
+  <div class="carrousel-end">    
+      <h4>Food halls, épiceries et marchés de rue pour les gastronomes</h4>    
+  </div><div class="carrousel-all">
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/1a.jpeg" alt="bristol"><h5>Le Bistrol Paris</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>2153</span></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/1.jpeg" alt=""><h5>La Réserve Paris - Hotel and Spa</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>528</span></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/exterior.jpg" alt=""><h5>Four seasons Hotel George V</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>3146</span></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-de-crillon.jpeg" alt=""></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/le-meurice-chambre-superieure.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-des-grands-boulevards.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/the-hoxton-paris.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-henriette.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hidden-hotel-by-elegancia.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img marg"><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-signature-st-germain.jpeg" alt=""><h5></h5><p></p></div>
+    </div>    
+</section>
+<section>
+  <div class="carrousel-end">
+    <h4>Parfaites pâtisseries parisiennes</h4>
+    </div>  <div class="carrousel-all">
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/le-bristol-paris-colonnade.jpg" alt="bristol"><h5>Le Bistrol Paris</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>2153</span></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/detail.jpg" alt=""><h5>La Réserve Paris - Hotel and Spa</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>528</span></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/exterior.jpg" alt=""><h5>Four seasons Hotel George V</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>3146</span></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-de-crillon.jpeg" alt=""></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/le-meurice-chambre-superieure.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-des-grands-boulevards.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/the-hoxton-paris.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-henriette.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hidden-hotel-by-elegancia.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img marg"><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-signature-st-germain.jpeg" alt=""><h5></h5><p></p></div>
+    </div>    
+</section>
+<section>
+  <div class="carrousel-end">
+    <h4>Splendides espaces verts</h4>
+    </div> 
+<section class="under-carrousel">
+  <div class="carrousel-end">
+    <h4>Bars à cocktails pour les soirées</h4>      
+    </div> <div class="carrousel-all">
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/le-bristol-paris-colonnade.jpg" alt="bristol"><h5>Le Bistrol Paris</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>2153</span></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/detail.jpg" alt=""><h5>La Réserve Paris - Hotel and Spa</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>528</span></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/exterior.jpg" alt=""><h5>Four seasons Hotel George V</h5><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><span>3146</span></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-de-crillon.jpeg" alt=""></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/le-meurice-chambre-superieure.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-des-grands-boulevards.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/the-hoxton-paris.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-henriette.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img "><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hidden-hotel-by-elegancia.jpeg" alt=""><h5></h5><p></p></div>
+      <div class="container-img marg"><i class="fa-brands fa-gratipay"></i><img src="./assets/img/hotel-signature-st-germain.jpeg" alt=""><h5></h5><p></p></div>
+    </div>    
+</section>
+    </main>
+
+  <section class="box-end">
+    <div class="without-carrousel no-margin-with-bottom">
+
+  <div class="here">
+  <div class="text-escape">
+    <h4>Obtenez des réponses à toutes vos question sur Tripadvisor</h4>
+    <p>Consultez le centre d'aide dès aujourd'hui</p>
+    <button class="last-button">Lancez-vous</button>
+  </div>
+  </div>
+  <div class="position position-voilier"><img class="abosluteImg logo-horizontal" src="/assets/img/Tripadvisor_lockup_horizontal_tertiary_on_dark.svg" alt="travelers choise"><img class="voilier" src="./assets/img/voilier.jpeg" alt="evadez-vous"></div>
+  </div>
+</section>
+<section class="very-display-small-log before-end">
+  <img src="./assets/img/Tripadvisor_lockup_horizontal_tertiary_on_dark.svg" alt="">
+  <h4>Obtenez des réponses à toutes vos question sur<br/> Tripadvisor</h4>
+    <p>Consultez le centre d'aide dès aujourd'hui</p>
+    <div><button class="last-button">Lancez-vous</button></div>
+</section>
+
+
+    <footer>
+      <div><img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt=""></div>
+      <p>Made at <a class="bold" href="https://www.lereacteur.io/?utm_source=google&utm_medium=cpc&utm_campaign=FR-SN-Brand&utm_term=le%20reacteur&utm_content=377851505166&gclid=CjwKCAjw14uVBhBEEiwAaufYxwi1GqlN4ZiNr5UfYwXTmzXTlsEEbbAtE3vrfd4ivpE5f1HFbjqgFRoC4q4QAvD_BwE">Le Reacteur</a> by <a  class="bold" href="https://github.com/972Olivier?tab=repositories">Olivier 🚀</a>- 2022</p>     
+     
+    </footer>
+  </body>
+</html>
