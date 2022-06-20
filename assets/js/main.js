@@ -21,7 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
       email: document.getElementById("email").value,
       message: document.getElementById("textaera").value,
     };
-    const response = await axios.post("http://localhost:3000/form", data);
+    const response = await axios.post(
+      "https://backend-tripadivsor.herokuapp.com/form",
+      data
+    );
 
     console.log(response);
     document.getElementById("form-submit").classList.add("hidden");
