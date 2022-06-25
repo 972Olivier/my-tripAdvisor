@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("form-submit").classList.remove("hidden");
     document.getElementById("body").classList.add("no-scrool");
   });
+  document.getElementById("contact").addEventListener("click", () => {
+    // console.log("clic");
+    document.getElementById("form-submit").classList.remove("hidden");
+    document.getElementById("body").classList.add("no-scrool");
+  });
 
   document.getElementById("x").addEventListener("click", () => {
     document.getElementById("form-submit").classList.add("hidden");

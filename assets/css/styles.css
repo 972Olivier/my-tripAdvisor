@@ -347,6 +347,9 @@ h1 span {
   object-fit: cover;
 }
 /*-----------------------the three section of the carroussel ------------------*/
+.slideImg {
+  display: none;
+}
 .three-section {
   display: flex;
   justify-content: space-between;
@@ -1079,7 +1082,7 @@ footer a:hover {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    background-color: grey;
+    /* background-color: grey; */
     height: 80px;
     padding-left: 20px;
     padding-right: 20px;
@@ -1093,6 +1096,7 @@ footer a:hover {
   .small-header .fa-solid {
     font-size: 20px;
   }
+
   .media-max-1084 {
     margin-top: 30px;
     width: 75vw;
@@ -1102,6 +1106,15 @@ footer a:hover {
     margin-left: auto;
   }
 
+  .modal {
+    height: 95vh;
+    width: 80vw;
+  }
+  .modal i {
+    font-size: 25px;
+    margin-left: 250px;
+  }
+
   .media-max-1084 p:not(.more) {
     display: none;
   }
@@ -1109,7 +1122,14 @@ footer a:hover {
   .menu-up {
     width: 80px;
   }
-
+  .navUnderImg {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  .slideImg {
+    display: flex;
+  }
   .big-img {
     width: 100vw;
     height: 277px;
@@ -1147,5 +1167,29 @@ footer a:hover {
   }
   .marginRightImg img {
     width: 100%;
+  }
+  .marginRightImg p,
+  .marginRightImg h5,
+  .circle {
+    margin-left: 20px;
+  }
+  .forum,
+  .three-div,
+  .under-forum {
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+  .before-end {
+    margin-top: 50px;
+  }
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  footer img {
+    margin-left: 10px;
+    margin-right: 0px;
   }
 } ;
